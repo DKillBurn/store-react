@@ -1,0 +1,67 @@
+.body
+    display flex 
+    list-style none
+    justify-content space-around
+    flex-direction row-reverse
+    min-width 110px
+    min-height 50px
+
+.body div
+    color #666
+    display flex
+    position relative
+    justify-content center
+    align-items center
+
+.body div svg
+    position absolute
+    z-index various
+
+.prestige1 div:nth-child(4) ~ div svg:nth-child(2)
+    color #CCC
+    font-size 1.25rem
+
+.prestige2 div:nth-child(3) ~ div svg:nth-child(2)
+    color #CCC
+    font-size 1.25rem
+
+.prestige3 div:nth-child(2) ~ div svg:nth-child(2)
+    color #CCC
+    font-size 1.25rem
+
+.prestige4 div:nth-child(1) ~ div svg:nth-child(2)
+    color #CCC
+    font-size 1.25rem
+
+.prestige5 div svg:nth-child(2)
+    color #CCC
+    font-size 1.25rem
+
+.star:hover
+    color var(--primary-darkcolor-theme)
+    transform scale(1.5)
+    
+
+.star:hover ~ div
+    color var(--primary-darkcolor-theme)
+    transition 0.15s
+
+.active1 div:nth-child(4) ~ div
+    color var(--primary-darkcolor-theme)
+    transition 0.15s
+
+.active2 div:nth-child(3) ~ div
+    color var(--primary-darkcolor-theme)
+    transition 0.15s
+
+.active3 div:nth-child(2) ~ div
+    color var(--primary-darkcolor-theme)
+    transition 0.15s
+
+.active4 div:nth-child(1) ~ div
+    color var(--primary-darkcolor-theme)
+    transition 0.15s
+
+.active5 div
+    color var(--primary-darkcolor-theme)
+    transition 0.15s
