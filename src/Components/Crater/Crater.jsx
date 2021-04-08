@@ -18,7 +18,7 @@ const Crater = React.memo(props=>{
             )
         }else{
             return(
-                <Aux className={styles.container} >
+                <Aux className={styles.container}>
                     <strong className={styles.label}>{props.label}</strong>
                     {props.children}
                 </Aux>
