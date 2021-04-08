@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import Aux from '../../../HOC/Aux/Auxil'
 
@@ -34,7 +34,7 @@ const CartListItem = React.memo(props=>{
         <Aux className={styles.body}>
             <Aux className={styles.productImage}>
                 <picture>
-                    <img src="" />
+                    <img alt='miniProduct' src="https://dummyimage.com/100x100/FFFFFF/333333.png" />
                 </picture>
             </Aux>
             <Aux className={styles.productDetail}>

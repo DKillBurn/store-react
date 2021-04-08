@@ -21,15 +21,29 @@ const CartAddition = React.memo(props=>{
     const handleAmount=(val)=>{
         switch(val){
             case 0: setAmount(amount+1); break;
-            case 1: if(amount !== 1){setAmount(amount-1); break;}
+            case 1: if(amount !== 1){setAmount(amount-1); } break;
             default: break;
         }
     }
 
     const handleCart=(e)=>{
-        //props.onCartAdded({})
+
+        e.preventDefault()
+        const newCart = props.cart.filter((e)=>e.id !== props.product.id)
+        let product = props.cart.find((e)=>e.id === props.product.id)
+        if(Boolean(product)){
+            product.amount +=amount
+        }else{
+            product = props.product
+            product.amount = amount
+        }
+        newCart.push(product)
+        
+        props.onAddToCart(newCart)
         props.onAlertSent({type:'success', message:'Product added to Cart'})
     }
+
+    
     
 
     return(

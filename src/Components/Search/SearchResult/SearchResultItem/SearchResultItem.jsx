@@ -39,7 +39,7 @@ const SearchResultItem = React.memo(props=>{
         <Aux className={styles.body}>
             <Aux className={styles.productImage} onClick={(e)=>handleProductDetail(e,props.id)}>
                 <picture>
-                    <img alt={props.id} src={props.img} />
+                    <img alt={props.id} src='https://dummyimage.com/200x200/FFFFFF/333333.png' />
                 </picture>
             </Aux>
             <Aux className={styles.productDesc}>
@@ -54,7 +54,7 @@ const SearchResultItem = React.memo(props=>{
                     <strong>Envio Gratis</strong>
                 </Aux>
                 <Aux className={styles.addCartThirdLabel} onClick={(e=>handleAddToCart(e, props.id))}>
-                    <strong>Add to cart</strong>
+                    <strong>Añadir al carro</strong>
                 </Aux>
             </Aux>
         </Aux>

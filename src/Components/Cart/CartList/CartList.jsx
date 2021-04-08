@@ -11,7 +11,7 @@ const CartList = React.memo(props=>{
     ?props.products.map((e)=>{
         return(<CartListItem key={e.id} id={e.id} title={e.title} amount={e.amount}/>)
     })
-    :(<strong>Tu carrito esta vacio</strong>)
+    :(<Aux className={styles.bodyEmpty}><strong>Tu carrito esta vacio</strong></Aux>)
 
     return(
         <Aux className={styles.body}>

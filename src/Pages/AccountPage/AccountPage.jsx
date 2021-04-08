@@ -18,25 +18,25 @@ class AccountPage extends Component
                 <Aux className={styles.bodyContent}>
                     <Crater className={styles.bodyOption} custom='true' enableLabel='false' onClick={()=>{}}>
                         <picture>
-                            <img className={styles.imageOption} src='' />
+                            <img className={styles.imageOption} alt='datos' src='https://dummyimage.com/160x160/333333/FFFFFF.png' />
                         </picture>
                         <strong>Cambiar datos</strong>
                     </Crater>
                     <Crater className={styles.bodyOption} custom='true' enableLabel='false' onClick={()=>{}}>
                         <picture>
-                            <img className={styles.imageOption} src='' />
+                            <img className={styles.imageOption} alt='pedidos' src='https://dummyimage.com/160x160/333333/FFFFFF.png' />
                         </picture>
                         <strong>Mis pedidos</strong>
                     </Crater>
                     <Crater className={styles.bodyOption} custom='true' enableLabel='false' onClick={()=>{}}>
                         <picture>
-                            <img className={styles.imageOption} src='' />
+                            <img className={styles.imageOption} alt='historial' src='https://dummyimage.com/160x160/333333/FFFFFF.png' />
                         </picture>
                         <strong>Historial</strong>
                     </Crater>
                     <Crater className={styles.bodyOption} custom='true' enableLabel='false' onClick={()=>{}}>
                         <picture>
-                            <img className={styles.imageOption} src='' />
+                            <img className={styles.imageOption} alt='direccion' src='https://dummyimage.com/160x160/333333/FFFFFF.png' />
                         </picture>
                         <strong>Direcciones</strong>
                     </Crater>

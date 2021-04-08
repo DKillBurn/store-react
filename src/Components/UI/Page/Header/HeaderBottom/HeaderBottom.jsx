@@ -3,7 +3,7 @@ import Canister from '../../../../HOC/Canister/Canister'
 import Aux from '../../../../HOC/Aux/Auxil'
 
 import styles from './HeaderBottom.module.styl'
-import { NavLink } from 'react-router-dom'
+//import { NavLink } from 'react-router-dom'
 
 const HeaderBottom = React.memo(props=>{
     return(
