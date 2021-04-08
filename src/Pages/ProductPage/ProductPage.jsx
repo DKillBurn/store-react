@@ -1,4 +1,4 @@
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 
 import Aux from '../../Components/HOC/Aux/Auxil';
 import Canister from '../../Components/HOC/Canister/Canister';

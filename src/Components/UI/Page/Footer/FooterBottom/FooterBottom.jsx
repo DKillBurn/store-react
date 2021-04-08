@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import Crater from '../../../../Crater/Crater'
 import Canister from '../../../../HOC/Canister/Canister'
 import SocialNetwork from '../../SocialNetwork/SocialNetwork'
 import SocialNetworkItem from '../../SocialNetwork/SocialNetworkItem/SocialNetworkItem'
-import Aux from '../../../../HOC/Aux/Auxil'
 
 import styles from './FooterBottom.module.styl'
 
@@ -12,25 +13,25 @@ const FooterBottom = React.memo(props=>{
         <Canister className={styles.body}>
             <Crater size='1' enableLabel='false' custom='true' className={styles.containerFooter}>
                 <strong className={styles.title}>Enlaces Utiles</strong>
-                <a href='#' className={styles.quickLink}>Mis Pedidos</a>
-                <a href='#' className={styles.quickLink}>Preguntas Frequentes</a>
-                <a href='#' className={styles.quickLink}>Metodos de envio</a>
-                <a href='#' className={styles.quickLink}>Cobertura</a>
-                <a href='#' className={styles.quickLink}>Metodos de pago</a>
+                <NavLink to ='/' className={styles.quickLink}>Mis Pedidos</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Preguntas Frequentes</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Metodos de envio</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Cobertura</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Metodos de pago</NavLink>
             </Crater>
             <Crater size='1' enableLabel='false' custom='true' className={styles.containerFooter}>
                 <strong className={styles.title}>Mi cuenta</strong>
-                <a href='#' className={styles.quickLink}>Devoluciones</a>
-                <a href='#' className={styles.quickLink}>Historial de compra</a>
-                <a href='#' className={styles.quickLink}>Localizar Pedido</a>
-                <a href='#' className={styles.quickLink}>Ajustes</a>
+                <NavLink to ='/' className={styles.quickLink}>Devoluciones</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Historial de compra</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Localizar Pedido</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Ajustes</NavLink>
             </Crater>
             <Crater size='1' enableLabel='false' custom='true' className={styles.containerFooter}>
                 <strong className={styles.title}>Contactanos</strong>
-                <a href='#' className={styles.quickLink}>Ayuda con pedido</a>
-                <a href='#' className={styles.quickLink}>Devolver o Reemplazar</a>
-                <a href='#' className={styles.quickLink}>Pedido perdido</a>
-                <a href='#' className={styles.quickLink}>Centro de ayuda</a>
+                <NavLink to ='/' className={styles.quickLink}>Ayuda con pedido</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Devolver o Reemplazar</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Pedido perdido</NavLink>
+                <NavLink to ='/' className={styles.quickLink}>Centro de ayuda</NavLink>
             </Crater>
             <Crater size='1' enableLabel='false' custom='true' className={styles.containerFooter}>
                 <strong className={styles.title}>Descarga la aplicacion</strong>

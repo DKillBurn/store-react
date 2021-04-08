@@ -1,5 +1,6 @@
 import React from 'react'
 import Aux from '../HOC/Aux/Auxil'
+import { NavLink } from 'react-router-dom'
 
 import styles from './Crater.module.styl'
 
@@ -11,13 +12,13 @@ const Crater = React.memo(props=>{
             css.push(styles.container)
             const styleCSS = css.join(' ')
             return (
-                <Aux className={styleCSS}  onClick={(e) =>{e.preventDefault(); props.onClick(e)}}>
+                <Aux className={styleCSS}>
                     {props.children}
                 </Aux>
             )
         }else{
             return(
-                <Aux className={styles.container} onClick={(e) =>{e.preventDefault(); props.onClick(e)}}>
+                <Aux className={styles.container}>
                     <strong className={styles.label}>{props.label}</strong>
                     {props.children}
                 </Aux>
@@ -41,9 +42,9 @@ const Crater = React.memo(props=>{
             return label(sizeClass)
         }else{
             return (
-                <a href="#" className={sizeClass.join(' ')}>
+                <NavLink to='/' className={sizeClass.join(' ')}>
                     {label()}
-                </a>
+                </NavLink>
             )
         }
     }

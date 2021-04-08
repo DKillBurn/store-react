@@ -26,7 +26,7 @@ const ProductInfo = React.memo(props =>{
                 </p>
             </Aux>
             <Aux className={styles.bodyCartProduct}>
-                <CartAddition />
+                <CartAddition product={props.product} />
             </Aux>
         </Aux>
     )

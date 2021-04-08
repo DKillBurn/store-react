@@ -10,7 +10,7 @@ const ProductPreview = React.memo(props =>{
     return(
         <Aux className={styles.body}>
             <Aux className={styles.bodyProductPreview}>
-                <img src=""  />
+                <img alt="product" title="producto" src="https://dummyimage.com/480x500/FFFFFF/333333.png"  />
             </Aux>
             <Aux className={styles.bodyProductThumbail}>
                 <Aux className={styles.productThumbail} >

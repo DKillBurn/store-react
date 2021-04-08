@@ -6,7 +6,7 @@ import styles from './Logo.module.styl'
 const Logo = React.memo(props=>{
     return(
         <NavLink to='/'>
-            <img className={styles.body} src="" />
+            <img alt='logo' title='logotipo' className={styles.body} src="https://dummyimage.com/140x50/333333/ffffff.png&text=Logotipo" />
         </NavLink>
     )
 })
